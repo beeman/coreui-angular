@@ -13,7 +13,7 @@ import { CoreUIConfigHeader } from '../../types'
           <li class="nav-item">
             <a class="nav-link navbar-toggler sidebar-toggle" href="#">&#9776;</a>
           </li>
-          <li class="nav-item px-1" *ngFor="let nav of config.navLeft">
+          <li class="nav-item px-1" *ngFor="let nav of config.nav">
             <i class="{{nav.icon}}"></i>
             <a class="nav-link"
                routerLinkActive="active"
