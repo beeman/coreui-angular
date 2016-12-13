@@ -43,7 +43,7 @@ var BreadcrumbsComponent = (function () {
 BreadcrumbsComponent = __decorate([
     core_1.Component({
         selector: 'coreui-breadcrumbs',
-        template: "\n    <template ngFor let-breadcrumb [ngForOf]=\"breadcrumbs\" let-last = last>\n        <li class=\"breadcrumb-item\" *ngIf=\"breadcrumb.label.title\" [ngClass]=\"{active: last}\">\n        <a *ngIf=\"!last\" [routerLink]=\"breadcrumb.url\">{{breadcrumb.label.title}}</a>\n        <span *ngIf=\"last\" [routerLink]=\"breadcrumb.url\">{{breadcrumb.label.title}}</span>\n    </template>\n    &nbsp\n"
+        template: "\n    <template ngFor let-breadcrumb [ngForOf]=\"breadcrumbs\" let-last = last>\n        <li class=\"breadcrumb-item\" *ngIf=\"breadcrumb.label.title\" [ngClass]=\"{active: last}\">\n        <a *ngIf=\"!last\" [routerLink]=\"breadcrumb.url\">{{breadcrumb.label.title}}</a>\n        <span *ngIf=\"last\" [routerLink]=\"breadcrumb.url\">{{breadcrumb.label.title}}</span>\n    </template>\n    &nbsp;\n"
     }),
     __metadata("design:paramtypes", [router_1.Router, router_1.ActivatedRoute])
 ], BreadcrumbsComponent);
