@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core'
-import { CoreUIConfigHeader } from '../../types'
+import { CoreUIConfigHeader } from '../../coreui-config'
 
 @Component({
   selector: 'coreui-header',

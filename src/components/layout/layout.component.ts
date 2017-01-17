@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core'
-import { CoreUIConfig } from '../../'
+import { CoreUIConfig } from '../../coreui-config'
 
 @Component({
   selector: 'coreui-layout',

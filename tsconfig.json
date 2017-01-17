@@ -1,45 +1,31 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "lib": ["es6", "dom"],
-    "moduleResolution": "node",
+    "baseUrl": ".",
     "declaration": true,
-    "noEmitHelpers": false,
-    "emitDecoratorMetadata": true,
+    "stripInternal": true,
     "experimentalDecorators": true,
-    "sourceMap": true,
-    "pretty": true,
-    "allowUnreachableCode": true,
-    "allowUnusedLabels": true,
-    "noImplicitAny": false,
-    "noImplicitReturns": false,
-    "noImplicitUseStrict": false,
-    "noFallthroughCasesInSwitch": false,
-    "allowSyntheticDefaultImports": true,
-    "suppressExcessPropertyErrors": true,
-    "suppressImplicitAnyIndexErrors": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "module": "es2015",
+    "moduleResolution": "node",
+    "paths": {
+      "@angular/core": ["node_modules/@angular/core"]
+    },
+    "rootDir": ".",
     "outDir": "dist",
-    "typeRoots": [
-      "../node_modules/@types"
+    "sourceMap": true,
+    "inlineSources": true,
+    "target": "es5",
+    "skipLibCheck": true,
+    "lib": [
+      "es2015", 
+      "dom"
     ]
   },
   "files": [
-    "src/index.ts"
+      "index.ts"
   ],
-  "exclude": [
-    "node_modules"
-  ],
-  "compileOnSave": false,
-  "buildOnSave": false,
-  "awesomeTypescriptLoaderOptions": {
-    "forkChecker": false,
-    "useWebpackText": true
-  },
   "angularCompilerOptions": {
-    "genDir": "dist/",
-    "skipMetadataEmit": false
+    "strictMetadataEmit": true
   }
 }

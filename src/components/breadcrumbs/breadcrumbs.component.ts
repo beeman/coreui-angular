@@ -1,4 +1,4 @@
-import { Component } from '@angular/core'
+import { Component, OnInit } from '@angular/core'
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router'
 import 'rxjs/add/operator/filter'
 
@@ -13,7 +13,7 @@ import 'rxjs/add/operator/filter'
     &nbsp;
 `
 })
-export class BreadcrumbsComponent {
+export class BreadcrumbsComponent implements OnInit {
   breadcrumbs: Array<Object>
 
   constructor(private router: Router, private route: ActivatedRoute) {
@@ -27,10 +27,10 @@ export class BreadcrumbsComponent {
       do {
         let childrenRoutes: any = currentRoute.children
         currentRoute = null
-        childrenRoutes.forEach(route => {
+        childrenRoutes.forEach((route: any) => {
           if (route.outlet === 'primary') {
             let routeSnapshot: any = route.snapshot
-            url += '/' + routeSnapshot.url.map(segment => segment.path).join('/')
+            url += '/' + routeSnapshot.url.map((segment: any) => segment.path).join('/')
             this.breadcrumbs.push({
               label: route.snapshot.data,
               url: url
