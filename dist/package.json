@@ -1,6 +1,6 @@
 {
   "name": "coreui-angular",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "Angular components and directives for CoreUI",
   "main": "bundles/coreui-angular.umd.js",
   "module": "index.js",
