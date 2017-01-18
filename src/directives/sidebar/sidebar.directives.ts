@@ -30,7 +30,7 @@ export class SidebarToggleDirective {
   toggleOpen($event: any): void {
     $event.preventDefault()
 
-    let bodyClass: string = localStorage.getItem('body-class')
+    let bodyClass: any = localStorage.getItem('body-class')
 
     if (SidebarToggleDirective.hasClass(document.querySelector('body'), 'sidebar-off-canvas')) {
       SidebarToggleDirective.toggleClass(document.querySelector('body'), 'sidebar-opened')

@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core'
-import { CoreUIConfigSidebar } from '../../types'
+import { CoreUIConfigSidebar } from '../../coreui-config'
 
 @Component({
   selector: 'coreui-sidebar',

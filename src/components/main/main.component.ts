@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core'
-import { CoreUIConfigMain } from '../../types'
+import { CoreUIConfigMain } from '../../coreui-config'
 
 @Component({
   selector: 'coreui-main',
@@ -35,6 +35,7 @@ import { CoreUIConfigMain } from '../../types'
 })
 export class MainComponent {
 
-  @Input() config: CoreUIConfigMain
+  @Input()
+  config: CoreUIConfigMain
 
 }

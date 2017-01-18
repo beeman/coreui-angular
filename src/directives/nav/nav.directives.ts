@@ -1,13 +1,11 @@
-import { Directive, HostListener } from '@angular/core'
+import { Directive, HostListener, HostBinding } from '@angular/core'
 
 @Directive({
   selector: '.nav-dropdown',
-  host: {
-    '[class.open]': '_open',
-  }
 })
 export class NavDropdownDirective {
 
+  @HostBinding('class.open')
   private _open: boolean = false
 
   /**

@@ -1,0 +1,8 @@
+{
+  "generator-ngx-module": {
+    "promptValues": {
+      "projectName": "coreui-angular",
+      "repoUrl": "https://github.com/beeman/coreui-angular"
+    }
+  }
+}

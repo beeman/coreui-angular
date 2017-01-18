@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core'
-import { CoreUIConfigFooter } from '../../types'
+import { CoreUIConfigFooter } from '../../coreui-config'
 
 @Component({
   selector: 'coreui-footer',
